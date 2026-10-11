@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isp-impact"
+version = "0.2.0"
+description = "Auditable tuning impact selection and regression execution"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "ISP Impact contributors"}]
+dependencies = []
+
+[project.scripts]
+isp-impact = "isp_impact.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["isp_impact*"]
